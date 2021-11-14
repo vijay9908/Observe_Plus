@@ -1,6 +1,7 @@
 from flask import Flask, render_template, Response
 import cv2
 import mediapipe as mp
+import os
 
 mp_drawing = mp.solutions.drawing_utils
 mp_face_detection = mp.solutions.face_detection
@@ -106,6 +107,10 @@ def index():
 def video_student():
     return render_template('video_student.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/video_student_position')
 def video_student_position():
     return render_template('video_student_position.html')
@@ -126,6 +131,8 @@ def video_feed_position():
 @app.route('/video_feed_admin')
 def video_feed_admin():
     return Response(gen_frames_admin(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+registry = os.path.join('static', 'Images')
 
 if __name__ == '__main__':
     app.run(debug=True)
