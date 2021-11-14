@@ -1,0 +1,11 @@
+#container {
+    margin: 0px auto;
+    width: 1280px;
+    height: 720px;
+    border: 10px #333 solid;
+}
+
+#feed {
+    width: 100%;
+    object-fit: cover;
+}
