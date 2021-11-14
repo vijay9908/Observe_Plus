@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Live Streaming Demonstration</title>
+    <!-- <link rel="stylesheet" href="../static/style.css"> -->
+    <style>
+        #container {
+            margin: 0px auto;
+            width: 1280px;
+            height: 720px;
+            border: 10px #333 solid;
+        }
+
+        #feed {
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="{{ url_for('video_feed_admin') }}">
+    </div>
+
+    <a href="{{ url_for('index')}}">Stop Proctoring</a>
+</body>
+
+</html>
