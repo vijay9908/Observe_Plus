@@ -1,5 +1,3 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" type="text/css" href="../static/about.css">
 
     <style type="text/css">
         body {
@@ -96,31 +94,31 @@
     <div class="row">
         <div class="column">
             <div class="card">
-                <img src="/media/profile/vijay.jpeg" alt="Jane" style="width:100%">
+                <img src="../static/profile/vijay.jpeg" alt="Jane" style="width:100%">
                 <div class="container">
                     <h2>Vijay Tanmay</h2>
                     <p class="title">AM.EN.U4CSE18155</p>
                     <p>Backend & Scrum, Moderable Front-end</p>
-                    <p><button class="button">Contact</button></p>
+                    <p><button class="button" id="vijay9908" onclick="redirect_vijay()">Contact</button></p>
                 </div>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
-                <img src="/media/profile/Subhash.JPG" alt="Mike" style="width:100%">
+                <img src="../static/profile/Subhash.JPG" alt="Mike" style="width:100%">
                 <div class="container">
                     <h2>Subhash Reddy</h2>
                     <p class="title">AM.EN.U4CSE18126</p>
                     <p>Back-end & Moderable Front-end</p>
-                    <p><button class="button">Contact</button></p>
+                    <p><button class="button" id="subhash" onclick="redirect_subhash()">Contact</button></p>
                 </div>
             </div>
         </div>
 
         <div class="column">
             <div class="card">
-                <img src="/media/profile/likith.JPG" alt="John" style="width:100%">
+                <img src="../static/profile/likith.JPG" alt="John" style="width:100%">
                 <div class="container">
                     <h2>Likith Mothukuri</h2>
                     <p class="title">AM.EN.U4CSE18136</p>
@@ -132,7 +130,7 @@
 
         <div class="column">
             <div class="card">
-                <img src="/media/profile/mounish.JPG" alt="John" style="width:100%">
+                <img src="../static/profile/mounish.JPG" alt="John" style="width:100%">
                 <div class="container">
                     <h2>Mounish Ch</h2>
                     <p class="title">AM.EN.U4CSE18113</p>
@@ -141,8 +139,19 @@
                 </div>
             </div>
         </div>
-
     </div>
 </body>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+    document.getElementById('vijay9908').onclick = function() {
+        location.href = "https://www.github.com/vijay9908";
+    }
+    document.getElementById('subhash').onclick = function() {
+        location.href = "https://github.com/subhashreddykallam";
+    }
+</script>
 
 </html>
