@@ -8,11 +8,37 @@
 </head>
 
 <body>
-    <div id="container">
-        <img src="{{ url_for('video_feed_admin') }}">
+    <nav>
+        <!-- <a href="{{ url_for('index')}}" class="info-text">Stop Capture</a> -->
+    </nav>
+
+    <div class="box box-middle" style="height: auto !important; margin-left: 22%; margin-right: 22%;">
+        <div style="height: auto !important;">
+            <h1>Welcome to Broader Admin View</h1>
+            <ul id="webcam-notices">
+                <li class="notice-loading loading_detectingDevices" style="display: none;">Detecting your media devices. Please wait...</li>
+                <li class="notice-loading loading_waitingPermission" style="display: none;">Waiting for your permission...</li>
+            </ul>
+            <img src="{{ url_for('video_feed_admin') }}" style="width: 100%">
+            <div id="webcam-controls" style="display: block;">
+                <select id="webcam-selecter"><option>FaceTime HD Camera</option></select>
+                <button id="webcam-launcher" onclick="Go_back()" id="go_back_bu">Stop Capture</button>
+            </div>
+
+        </div>
     </div>
 
-    <a href="{{ url_for('index')}}">Stop Proctoring</a>
+
+
+
+
 </body>
+
+<script type="text/javascript">
+    function Go_back() {
+        var url = "{{url_for('index')}}";
+        location.href = url;
+    }
+</script>
 
 </html>

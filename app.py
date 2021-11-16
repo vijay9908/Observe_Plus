@@ -90,8 +90,7 @@ def gen_frames_position():
                     image = cv2.arrowedLine(image, nose, (640, 360), (0, 255, 0), 5) 
             ret, buffer = cv2.imencode('.jpg', cv2.flip(image, 1))
             frame = buffer.tobytes()
-            yield (b'--frame\r\n'
-                   b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+            yield (b'--frame\r\n' b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 def free_webcam():
     if cap.isOpened():
