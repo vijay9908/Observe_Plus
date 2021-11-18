@@ -1,7 +1,7 @@
 # Observe+
 
-![GitHub](https://img.shields.io/github/license/vijay9908/StreamZ)
-![GitHub last commit](https://img.shields.io/github/last-commit/vijay9908/StreamZ)
+![GitHub](https://img.shields.io/github/license/vijay9908/Observe_Plus)
+![GitHub last commit](https://img.shields.io/github/last-commit/vijay9908/Observe_Plus)
 
 #### A video positioning tool with for varied applications.
 
