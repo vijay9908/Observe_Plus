@@ -13,7 +13,7 @@
     </nav>
 
     <div class="box box-middle" style="height: auto !important; margin-left: 22%; margin-right: 22%;">
-        <div style="height: auto !important;">
+        <div onload="loader()" style="height: auto !important;">
             <h1>Welcome to Broader Admin View</h1>
             <ul id="webcam-notices">
                 <li class="notice-loading loading_detectingDevices" style="display: none;">Detecting your media devices. Please wait...</li>
@@ -24,7 +24,6 @@
                 <select id="webcam-selecter"><option>FaceTime HD Camera</option></select>
                 <button id="webcam-launcher" onclick="Go_back()" id="go_back_bu">Stop Capture</button>
             </div>
-
         </div>
     </div>
 
@@ -35,6 +34,11 @@
 </body>
 
 <script type="text/javascript">
+    function loader() {
+        alert("Use Camera Permissions");
+    }
+    loader();
+
     function Go_back() {
         var url = "{{url_for('index')}}";
         location.href = url;

@@ -53,8 +53,8 @@
 
                     <div class="btn_wrapper">
                         <div><button><a href="{{url_for('video_admin')}}" class='btn view_more_btn'>Admin View</a><i class="ri-arrow-right-line"></i></button></div>
-                        <!-- <button class="btn view_more_btn" onclick="redirect_admin()">Admin View</button> -->
-                        <div><button style="text-align: center;"><a href="{{url_for('video_feed_position')}}" class='btn documentation_btn'>Student View</a></button></div>
+                        <button class='btn documentation_btn' onclick="redirect()">Student View</button>
+                        <!-- <div><button style="text-align: center;"><a href="{{url_for('video_feed_position')}}" class='btn documentation_btn' style="text-align: center">Student View</a></button></div> -->
                     </div>
                 </div>
                 <div class="grid-item-2">
@@ -74,9 +74,9 @@
     </footer>
 
     <script type="text/javascript">
-        function redirect_admin() {
-            var url = "{{url_for('video_admin')}}";
-            window.location(url);
+        function redirect() {
+            var url = "{{url_for('video_feed_position')}}";
+            location.href = url;
         }
     </script>
 
