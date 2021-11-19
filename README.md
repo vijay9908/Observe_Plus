@@ -1,6 +1,6 @@
 # Observe+
 
-![GitHub](https://img.shields.io/github/license/vijay9908/Observe_Plus)
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/vijay9908/Observe_Plus)
 
 #### A video positioning tool with for varied applications.
@@ -10,7 +10,6 @@ The following are the documentation prepared with all the development steps foll
 [Project abstract](https://docs.google.com/document/d/19zJ_vhUqpcnr4rFXrMF0_B0vo8KWHMm8xhgTVgO4eAE/edit?usp=sharing)
 
 [Mock WireFrame](https://app.uizard.io/p/6f611e4c)
-
 
 
 #### 🛠 How to Run Locally & Develop ?
