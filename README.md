@@ -12,6 +12,7 @@ The following are the documentation prepared with all the development steps foll
 [Mock WireFrame](https://app.uizard.io/p/6f611e4c)
 
 
+
 #### 🛠 How to Run Locally & Develop ?
 1. Install [Python](https://www.python.org/downloads/) and [Pipenv](https://pypi.org/project/pipenv/).
    If you had installed python and Pipenv previously, No need to re-install again.
